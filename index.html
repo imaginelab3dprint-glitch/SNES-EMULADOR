@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SNES NFC</title>
+<meta charset="UTF-8">
 
-    <script>
-        // CONFIGURACIÓN DEL EMULADOR
-        EJS_player = "#game";
-        EJS_core = "snes";
-        EJS_gameName = "Mi Juego SNES";
-        EJS_color = "#e60012";
-        EJS_startOnLoaded = true;
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        // Archivos necesarios de EmulatorJS
-        EJS_pathtodata =
-            "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
+<title>SNES NFC</title>
 
-        // ROM DEL JUEGO
-        // Sube tu ROM legalmente autorizada con este nombre
-        // dentro de la carpeta roms
-        EJS_gameUrl = "roms/dkc1.sfc";
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
+<style>
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            overflow: hidden;
-        }
+html, body {
 
-        #game {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #000;
+
+}
+
+#game {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+EJS_player = "#game";
+
+EJS_core = "snes";
+
+EJS_gameName = "Mi Juego SNES";
+
+EJS_gameUrl = "./roms/juego.sfc";
+
+EJS_startOnLoaded = true;
+
+EJS_color = "#e60012";
+
+EJS_pathtodata =
+"https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
+
+
 </head>
 
+
 <body>
-    <div id="game"></div>
+
+<div id="game"></div>
+
 </body>
+
 </html>
