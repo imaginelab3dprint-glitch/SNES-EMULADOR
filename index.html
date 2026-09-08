@@ -2,68 +2,51 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>SNES NFC</title>
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            overflow: hidden;
+        }
 
-<title>SNES NFC</title>
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 
+    <script>
+        EJS_player = "#game";
 
-<style>
+        EJS_core = "snes";
 
-html, body {
+        EJS_gameName = "Mi Juego SNES";
 
-    width: 100%;
-    height: 100%;
+        EJS_gameUrl = "./roms/juego.sfc";
 
-    margin: 0;
-    padding: 0;
+        EJS_startOnLoaded = true;
 
-    background-color: #000;
+        EJS_color = "#e60012";
 
-}
+        EJS_pathtodata =
+            "https://cdn.emulatorjs.org/stable/data/";
+    </script>
 
-#game {
-
-    width: 100%;
-    height: 100%;
-
-}
-
-</style>
-
-
-<script type="text/javascript">
-
-EJS_player = "#game";
-
-EJS_core = "snes";
-
-EJS_gameName = "Mi Juego SNES";
-
-EJS_gameUrl = "./roms/juego.sfc";
-
-EJS_startOnLoaded = true;
-
-EJS_color = "#e60012";
-
-EJS_pathtodata =
-"https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
-
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
-
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 
 </head>
 
-
 <body>
 
-<div id="game"></div>
+    <div id="game"></div>
 
 </body>
 
