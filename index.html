@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SNES NFC</title>
+
+    <script>
+        // CONFIGURACIÓN DEL EMULADOR
+        EJS_player = "#game";
+        EJS_core = "snes";
+        EJS_gameName = "Mi Juego SNES";
+        EJS_color = "#e60012";
+        EJS_startOnLoaded = true;
+
+        // Archivos necesarios de EmulatorJS
+        EJS_pathtodata =
+            "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/";
+
+        // ROM DEL JUEGO
+        // Sube tu ROM legalmente autorizada con este nombre
+        // dentro de la carpeta roms
+        EJS_gameUrl = "roms/juego.sfc";
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@latest/data/loader.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game"></div>
+</body>
+</html>
